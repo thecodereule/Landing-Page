@@ -17,11 +17,19 @@ body {
     background-color: #1F2937;
 }
 
+h2.no-select {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
 
 /* Container for limiting content width */
 .container {
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Navbar styles */
@@ -37,12 +45,22 @@ nav.container {
     margin-top: 40px;
 }
 
-
 ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
 }
+
+.header-link a {
+    text-decoration: none;
+    color: #F9FAF8; /* Text color for links */
+    padding: 10px;
+}
+
+.header-link a:hover {
+    color: #4a90e2; /* Hover color for links */
+}
+
 
 /* Hero section */
 .hero {
@@ -132,4 +150,57 @@ footer {
         margin-top: 20px;
         max-width: 100%;
     }
+
+    .info-grid {
+        flex-direction: column; /* Stack items vertically */
+        gap: 30px;
+    }
+
+    .info-item {
+        flex: 1 1 100%; /* Each item takes full width on smaller screens */
+    }
 }
+
+.info-section {
+    padding: 50px 0;
+    background-color: #F9FAFB;
+}
+
+.info-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Flexbox grid for the info items */
+.info-grid {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    gap: 20px; /* Space between the grid items */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Styling for each info item (image + text) */
+.info-item {
+    background-color: white;
+    border: 1px solid turquoise;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(25% - 20px); /* Each item takes 25% width minus the gap */
+    text-align: center;
+}
+
+/* Image inside each item */
+.info-item img {
+    width: 100%; /* Width of the image is 100% of it's parent element */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Text below the image */
+.info-item p {
+    font-size: 1rem;
+    color: #555
+}
+
