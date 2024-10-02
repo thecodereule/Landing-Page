@@ -15,6 +15,7 @@ body {
     font-size: 16px;
     text-decoration: none;
     background-color: #1F2937;
+    width: 100vw;
 }
 
 h2.no-select {
@@ -108,18 +109,42 @@ ul {
     width: 600px;
 }
 
-/* Section styles */
-.section-one {
-    background-color: #E5E7EB; /* Light gray background for section one */
+.quote-section {
+    background-color: gainsboro;
     padding: 50px 0;
-    width: 100vw; /* Full width of the screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
 }
 
-.section-two {
-    background-color: #F59E0B; /* Orange background for section two */
-    padding: 50px 0;
-    width: 100vw; /* Full width of the screen */
+.quote-section .container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
 }
+
+.quote-section blockquote {
+    display: flex;
+    flex-direction: column; /* Stack paragraph and footer vertically */
+    justify-content: space-between;
+    min-height: 150px; /* Ensure some vertical spacing */
+    padding: 20px;
+}
+
+.quote-section p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #4B5563;
+    text-align: left; /* Align paragraph to the left */
+}
+
+.quote-section footer {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 
 .section-three {
     background-color: #10B981; /* Green background for section three */
@@ -128,7 +153,7 @@ ul {
 }
 
 /* Footer */
-footer {
+.footer {
     background-color: #1F2937;
     color: white;
     text-align: center;
@@ -164,6 +189,7 @@ footer {
 .info-section {
     padding: 50px 0;
     background-color: #F9FAFB;
+    min-height: 400px;
 }
 
 .info-section h2 {
