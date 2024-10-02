@@ -28,7 +28,7 @@ h2.no-select {
 
 /* Container for limiting content width */
 .container {
-    width: 75%;
+    width: 80%;
     flex-wrap: wrap; /* Allows wrapping of items if they exceed the container width */
     margin: 0 auto; 
     overflow-x: hidden; /* Prevent horizontal overflow */
@@ -159,7 +159,7 @@ ul {
     background-color: #1F2937;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 /* Media query for responsiveness */
@@ -208,6 +208,8 @@ ul {
     justify-content: space-between; /* Space between items */
     gap: 20px; /* Space between the grid items */
     flex-wrap: wrap; /* Allow wrapping on small screens */
+    width: 70%;
+    margin: 0px auto;
 }
 
 /* Styling for each info item (image + text) */
@@ -233,3 +235,48 @@ ul {
     color: #555
 }
 
+/* cta section */
+.cta-section {
+    background-color: #4a90e2;
+    padding: 40px 0;
+    width: 70%;
+    color: white;
+    height: 50%;
+    border-radius: 10px;
+    
+}
+
+.cta-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cta-content {
+    max-width: 50%;
+}
+
+.cta-section button {
+    background-color: white;
+    color: #4a90e2; /* Blue text to match the background */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px; /* Rounded corners */
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; /* Space between the text and button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.cta-section button:hover {
+    background-color: #e5e7eb; /* Light gray background on hover */
+}
+
+.cta-wrapper {
+    background-color: white;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
