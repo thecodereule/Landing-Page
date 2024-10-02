@@ -116,6 +116,7 @@ ul {
     align-items: center;
     justify-content: center;
     min-height: 500px;
+    height: 500px;
 }
 
 .quote-section .container {
@@ -190,6 +191,7 @@ ul {
     padding: 50px 0;
     background-color: #F9FAFB;
     min-height: 500px;
+    height: 500px;
 }
 
 .info-section h2 {
