@@ -15,7 +15,7 @@ body {
     font-size: 16px;
     text-decoration: none;
     background-color: #1F2937;
-    width: 100vw;
+    width: 100%;
 }
 
 h2.no-select {
@@ -68,7 +68,7 @@ ul {
     background-color: #1F2937; /* Background color of hero section */
     color: white;
     padding: 50px 0;
-    width: 100vw; /* Full width of the screen */
+    width: 100%; /* Full width of the screen */
 }
 
 .hero .container {
@@ -150,7 +150,7 @@ ul {
 .section-three {
     background-color: #10B981; /* Green background for section three */
     padding: 50px 0;
-    width: 100vw; /* Full width of the screen */
+    width: 100%; /* Full width of the screen */
 }
 
 /* Footer */
