@@ -28,7 +28,7 @@ h2.no-select {
 
 /* Container for limiting content width */
 .container {
-    width: 80%;
+    width: 75%;
     flex-wrap: wrap; /* Allows wrapping of items if they exceed the container width */
     margin: 0 auto; 
     overflow-x: hidden; /* Prevent horizontal overflow */
